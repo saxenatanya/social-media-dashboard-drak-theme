@@ -11,14 +11,24 @@ checkBox.addEventListener('change', function () {
         console.log(creator);
         document.body.setAttribute('data-theme', 'light');
         head.setAttribute('data-theme', 'light');
-        creator.setAttribute('data-theme', 'light');
-        bottom.setAttribute('data-theme', 'light');
+        // creator.setAttribute('data-theme', 'light');
+        creator.forEach((create)=>{
+            create.setAttribute('data-theme', 'light');
+        });
+        // bottom.setAttribute('data-theme', 'light');
+        bottom.forEach((btn)=>{
+            btn.setAttribute('data-theme', 'light');
+        });
        
     } else {
         document.body.setAttribute('data-theme', 'dark');
         head.setAttribute('data-theme', 'dark');
-        creator.setAttribute('data-theme', 'dark');
-        bottom.setAttribute('data-theme', 'dark');
+        creator.forEach((create)=>{
+            create.setAttribute('data-theme', 'dark');
+        });
+        bottom.forEach((btn)=>{
+            btn.setAttribute('data-theme', 'dark');
+        });
     }
 });
 
