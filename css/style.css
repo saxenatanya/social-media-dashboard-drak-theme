@@ -1,4 +1,5 @@
 
+
 *{
     box-sizing: border-box;
 
@@ -189,7 +190,7 @@ body.light .bottom__card {
 .bottom__card-numbers, .bottom__card-text {
     display: flex;
     justify-content: space-between;
-    color: black;
+    /* color: black; */
 }
 
 .creator-card::before {
@@ -219,7 +220,7 @@ body.light .bottom__card {
 .bottom__card-text {
     align-items: center;
     margin-bottom: 1.4375rem;
-    color: black;
+    /* color: black; */
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
@@ -259,10 +260,7 @@ body.light .bottom__card {
     }
 }
 
-.light-mode {
-    background-color:white;
-    color: black;
-  }
+/* toggle button css */
 
 
 input[type=checkbox] {
