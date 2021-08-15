@@ -5,29 +5,29 @@ let creator = document.querySelectorAll('.creator-card');
 let bottom = document.querySelectorAll('.bottom__card');
 
 
-console.log(checkBox);
+// console.log(checkBox);
 checkBox.addEventListener('change', function () {
     if (this.checked) {
-        console.log(creator);
-        document.body.setAttribute('data-theme', 'light');
-        head.setAttribute('data-theme', 'light');
-        // creator.setAttribute('data-theme', 'light');
-        creator.forEach((create)=>{
-            create.setAttribute('data-theme', 'light');
-        });
-        // bottom.setAttribute('data-theme', 'light');
-        bottom.forEach((btn)=>{
-            btn.setAttribute('data-theme', 'light');
-        });
-       
-    } else {
+//         console.log(creator);
         document.body.setAttribute('data-theme', 'dark');
         head.setAttribute('data-theme', 'dark');
+        // creator.setAttribute('data-theme', 'light');
         creator.forEach((create)=>{
             create.setAttribute('data-theme', 'dark');
         });
+        // bottom.setAttribute('data-theme', 'light');
         bottom.forEach((btn)=>{
             btn.setAttribute('data-theme', 'dark');
+        });
+       
+    } else {
+        document.body.setAttribute('data-theme', 'light');
+        head.setAttribute('data-theme', 'light');
+        creator.forEach((create)=>{
+            create.setAttribute('data-theme', 'light');
+        });
+        bottom.forEach((btn)=>{
+            btn.setAttribute('data-theme', 'light');
         });
     }
 });
